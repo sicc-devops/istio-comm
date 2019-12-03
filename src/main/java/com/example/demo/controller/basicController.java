@@ -43,21 +43,16 @@ public class basicController {
         Map<String, String> params = new HashMap<>();
         
         //순서대로 url, method, entity(header, params), return type
-        String call_uri = DemoEndpoint + "/getInfo";
-        //String call_uri = "http://35.193.168.90/demo/getInfo";
+        String call_uri = "http://35.193.168.90/demo/getInfo";
         logger.info("log>>>>>>>>>>>>>>>  /getDemo called");
         
-        //ResponseEntity<String> result = restTemplate.exchange(
-        //		call_uri, HttpMethod.GET, httpEntity, String.class);
-		
-        String result = restTemplate.getForObject( call_uri, String.class);
-
-            	
-        //String Code = result.getStatusCode().toString();
+        ResponseEntity<String> result = restTemplate.exchange(
+        		call_uri, HttpMethod.GET, httpEntity, String.class);
+		    	
+        String Code = result.getStatusCode().toString();
         
-		//return "getDemo(" + Code +") => "+ result.getBody();
-        return result;
-
+		return "getDemo(" + Code +") => "+ result.getBody();
+        
 	}
 	
 }
