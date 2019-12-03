@@ -8,7 +8,7 @@ import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 public class RestTmplConfig {
-
+	/*
 	@Configuration
 	public class HttpConnectionConfig {
 
@@ -25,5 +25,5 @@ public class RestTmplConfig {
 	        return new RestTemplate(httpRequestFactory);
 	    }
 
-	}
+	}*/
 }
