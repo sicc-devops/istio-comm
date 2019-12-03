@@ -2,5 +2,5 @@ server:
   port: 9092
 client:
   demo:
-    endpoint: demo-service.istio-system.svc.cluster.local/demo
+    endpoint: demo-service.istio-system.svc.cluster.local:9091/demo
       
