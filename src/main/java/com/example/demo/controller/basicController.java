@@ -55,4 +55,8 @@ public class basicController {
         
 	}
 	
+	@RequestMapping("/testtoken")
+	public String test() {
+		return "success~!!";
+	}
 }
