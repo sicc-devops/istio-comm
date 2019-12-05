@@ -2,20 +2,5 @@ server:
   port: 9092
 client:
   demo:
-    endpoint: http://demo-service.istio-system.svc.cluster.local:9091/demo
-    
-security:
-  oauth2:
-    resource:
-      jwt:
-        keyValue: |
-          -----BEGIN PUBLIC KEY-----
-          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5wlCN/CfIVqbGOX5lrSZ
-          90OQbrqvpVtDla9CQjvt5ZvaJk+6XA0+c2vOX9a6qmSf27fDldb+wtI9aDKGfsnH
-          WnuX0b7hu8jQI7vzKbhlTnsBMCPqxRnV3f0BonIwKmhT5+M3BS1OObqRJkMyjFkS
-          vdvvrtAP3aztUSI9rvM8EX0bNlsOvGy9p3sFUXdN8i6SOz09UWrQsC6H8CqKk2bA
-          uDkAc2dysHCOmMDwKNh0oSN/3+KobsOSTCdkwRu1yKMhOU8SusEmX+QzVYHEU4cB
-          PykQF4T2I99OrzKJYNdfe3r01f2xqRQmli56urgw5CZkvNPvNtZijEqO6rJ/LYdt
-          VwIDAQAB
-          -----END PUBLIC KEY-----    
+    endpoint: http://demo-service.istio-system.svc.cluster.local:9091/demo   
       
